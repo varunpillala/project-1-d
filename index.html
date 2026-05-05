@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps CI/CD App</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a, #2563eb);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 20px;
+            background: rgba(0,0,0,0.3);
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .container {
+            margin-top: 80px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            background: #22c55e;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #16a34a;
+        }
+
+        .output {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            padding: 10px;
+            background: rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🚀 CI/CD Pipeline App</h1>
+    <p>Deployed using Jenkins + Docker + Kubernetes</p>
+</header>
+
+<div class="container">
+    <h2>Click to Test Deployment</h2>
+    <button onclick="showMessage()">Run App</button>
+
+    <div class="output" id="output"></div>
+</div>
+
+<footer>
+    <p>© 2026 DevOps Project</p>
+</footer>
+
+<script>
+function showMessage() {
+    document.getElementById("output").innerHTML =
+        "✅ App is successfully deployed via CI/CD!";
+}
+</script>
+
+</body>
+</html>
